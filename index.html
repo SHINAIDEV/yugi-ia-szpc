@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yugi IA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"/>
+
+        <link rel="stylesheet" href="./src/css/reset.css">
+        <link rel="stylesheet" href="./src/css/estilos.css">
+        <link rel="stylesheet" href="./src/css/responsivo.css">
+</head>
+
+<body background="./src/imagens/Fundo site.png">
+    <header class="cabecalho">
+        <img src="./src/imagens/logo yugi ia.png" alt="Logo YugiIA">
+    </header>
+    <main class="container">
+        <h1 class="produtos">Produtos</h1>
+        <div class="filtros">
+            <div class="categorias-cartas">
+                <label for="categoria">Categoria</label>
+                <select id="categoria" class="categoria">
+                    <option value="">Selecione Uma Carta</option>
+                    <option value="comum">Comum</option>
+                    <option value="rara">Rara</option>
+                    <option value="épica">Épica</option>
+                </select>
+            </div>
+            <div class="preco-cartas">
+                <label for="preco">Preço máximo (R$)</label>
+                <input type="text" id="preco" class="preco" placeholder="Ex:100">
+            </div>
+            <button class="btn-filtrar">Aplicar filtros</button>
+        </div>
+        <ul class="cartas">
+            <li class="carta" data-categoria="Épica" data-preco="3000">
+                <img src="./src/imagens/Dragão Negro de olhos Vermelhos.jpg" alt="" />
+
+                <div class="informacoes">
+                    <h2 class="nome-personagem">
+                        Dragão de Olhos Vermelhos
+                    </h2>
+                    <span class="categoria">Categoria: Épica</span>
+                    <span class="preco">R$ 3.000,00</span>
+                    <a href="http://wa.me/5514991999999?text=Olá, quero comprar a carta Dragão Negro de Olhos Vermelhos!" class="btnc-comprar" target="_blank">Comprar</a>
+                </div>
+            </li>
+
+            <li class="carta" data-categoria="Épica" data-preco="4000">
+                <img src="./src/imagens/Mago Negro.png" alt="Carta Mago Negro" />
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Mago Negro</h2>
+                    <span class="categoria">Categoria: Épica</span>
+                    <span class="preco">R$ 4.000,00</span>
+                     <a href="http://wa.me/5514991999999?text=Olá, quero comprar a carta Mago Negro!" class="btnc-comprar" target="_blank">Comprar</a>
+                </div>
+            </li>
+            <li class="carta" data-categoria="Comum" data-preco="800">
+                <img src="./src/imagens/Neos o heroi do elemento.jpg" alt="Carta Neos" />
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Neos, O Herói do Elemento</h2>
+                    <span class="categoria">Categoria: Comum</span>
+                    <span class="preco">R$ 800,00</span>
+                     <a href="http://wa.me/5514991999999?text=Olá, quero comprar a carta Neos o herói do elemento!" class="btnc-comprar" target="_blank">Comprar</a>
+                </div>
+            </li>
+            <li class="carta" data-categoria="Rara" data-preco="1500">
+                <img src="./src/imagens/Kuriboh Alado.png" alt="Carta Kuriboh Alado" />
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Kuriboh Alado</h2>
+                    <span class="categoria">Categoria: Rara</span>
+                    <span class="preco">R$ 1500,00</span>
+                     <a href="http://wa.me/5514991999999?text=Olá, quero comprar a carta Kuriboh Alado!" class="btnc-comprar" target="_blank">Comprar</a>
+                </div>
+            </li>
+            <li class="carta" data-categoria="Comum" data-preco="600">
+                <img src="./src/imagens/Mago do tempo.png" alt="Carta Mago do Tempo" />
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Mago do Tempo</h2>
+                    <span class="categoria">Categoria: Comum</span>
+                    <span class="preco">R$ 600,00</span>
+                     <a href="http://wa.me/5514991999999?text=Olá, quero comprar a carta Mago do Tempo!" class="btnc-comprar" target="_blank">Comprar</a>
+                </div>
+            </li>
+            <li class="carta" data-categoria="Comum" data-preco="400">
+                <img src="./src/imagens/Força Espelho.png" alt="Carta Força Espelho" />
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Força Espelho</h2>
+                    <span class="categoria">Categoria: Comum</span>
+                    <span class="preco">R$ 400,00</span>
+                     <a href="http://wa.me/5514991999999?text=Olá, quero comprar a carta Força Espelho!" class="btnc-comprar" target="_blank">Comprar</a>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <footer class="rodape">@2025 - Todos os direitos reservados</footer>
+    <script src="./src/js/index-refatorado.js"></script>
+</body>
+</html>
